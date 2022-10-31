@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;900&display=swap" rel="stylesheet">
+    <title>Business Card</title>
+
+    <style>
+        body{
+            margin:  20px;
+            font-family: 'Overpass', sans-serif;
+            color: #555;
+        }
+        .avatar{
+            width: 150px;
+            border-radius: 3px;
+        }
+        .card{
+            width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            background-color: #003049;
+            color: #d8cefe;
+            border-bottom: 8px solid #d8cefe;
+            border-radius: 3px;
+            position: relative;
+            animation-name: mycard;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes mycard {
+        0%   {background-color:#003049;  top:0px;}
+        25%  {background-color:#5e548e;  top: 50px;}
+        50%  {background-color:#335c67;  top:100px;}
+        75%  {background-color:#83c5be; top:150px;}
+        100% {background-color: #003049;  top:0px;}
+        }
+        
+        @media screen and (max-width: 500px) {
+            .card{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+     <div>
+        <img src="images/charles.png" alt="Charles Mambo smiling at the camera" class="avatar ">
+     </div>
+     <div>
+        <h2>Charles Mambo</h2>
+        <p>Front-end Developer</p>
+        <h4>Cape Town, South Africa</h4>
+    </div>
+
+    </div>
+</body>
+</html>
